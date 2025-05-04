@@ -3,7 +3,9 @@
 --
 -- luacheck: ignore
 -- bmos' list of changes to simplify maintenance:
--- Removed onInit, parseEffectComp, rebuildParsedEffectComp, applyOngoingDamageAdjustment, checkConditional, and checkConditionalHelper functions
+-- Changed EffectManager35E.getEffectsByType to EffectManager35EDS.getEffectsByType
+-- Changed EffectManager35E.getEffectsBonusByType to EffectManager35EDS.getEffectsBonusByType
+-- Changed EffectManager35E.hasEffect to EffectManager35EDS.hasEffect
 -- Commented out code labeled "Remove one shot effects"
 -- Commented out code labeled "If matched, then remove one-off effects"
 

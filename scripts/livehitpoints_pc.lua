@@ -34,7 +34,7 @@ local function getAbilityBonusUsed(rActor)
 
 	local sAbility = getAbility(nodePC)
 	local nAbilityMod = ActorManager35E.getAbilityBonus(rActor, sAbility)
-	local nEffectBonus = ActorManager35E.getAbilityEffectsBonus(rActor, sAbility)
+	local nEffectBonus = ActorManager35EDS.getAbilityEffectsBonus(rActor, sAbility)
 
 	local nLevel = DB.getValue(nodePC, 'level', 0)
 

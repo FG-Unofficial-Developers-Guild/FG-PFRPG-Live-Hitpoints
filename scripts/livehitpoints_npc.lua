@@ -154,7 +154,7 @@ local function getAbilityBonusUsed(rActor, nLevel)
 
 	local sAbility, nAbilModOverride = guessAbility(nodeNPC)
 	local nAbilityMod = ActorManager35E.getAbilityBonus(rActor, sAbility)
-	local nEffectBonus = ActorManager35E.getAbilityEffectsBonus(rActor, sAbility)
+	local nEffectBonus = ActorManager35EDS.getAbilityEffectsBonus(rActor, sAbility)
 	if nAbilModOverride then
 		nAbilityMod = nAbilModOverride
 	end

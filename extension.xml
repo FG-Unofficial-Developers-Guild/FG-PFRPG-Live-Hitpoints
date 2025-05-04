@@ -36,6 +36,7 @@
 		<includefile source="campaign/record_charmini_main.xml" />
 		<includefile source="campaign/record_npc.xml" />
 		<!-- Scripts -->
+		<script name="ActorManager35EDS" file="scripts/manager_actor_35E_DS.lua" />
 		<script name="EffectManager35EDS" file="scripts/manager_effect_35E_DS.lua" />
 		<script name="LiveHP" file="scripts/livehitpoints.lua" />
 		<script name="PCLiveHP" file="scripts/livehitpoints_pc.lua" />

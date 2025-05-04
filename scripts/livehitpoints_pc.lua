@@ -82,8 +82,9 @@ end
 --	luacheck: globals setHpTotal
 function setHpTotal(rActor)
 	local nodePC = ActorManager.getCreatureNode(rActor)
+	local calculatedHp = LiveHP.calculateHp(nodePC, rActor, getAbilityBonusUsed(rActor), getFeatBonusHp(rActor))
 
-	DB.setValue(nodePC, 'hp.total', 'number', LiveHP.calculateHp(nodePC, rActor, getAbilityBonusUsed(rActor), getFeatBonusHp(rActor)))
+	DB.setValue(nodePC, 'hp.total', 'number', calculatedHp)
 end
 
 --

@@ -6,8 +6,8 @@
 	<properties>
 		<loadorder>60</loadorder>
 		<name>Feature: Live Hitpoints</name>
-		<version>2.16</version>
-		<author>bmos (Wil Thieme)</author>
+		<version>2.17</version>
+		<author>bmos/Tanor</author>
 		<description>This extension automates changes to hitpoints based on an ability score.</description>
 		<ruleset>
 			<name>3.5E</name>
@@ -22,7 +22,7 @@
 		</luacheck>
 	</properties>
 
-	<announcement text="https://github.com/bmos/FG-PFRPG-Live-Hitpoints-from-Constitution\rPFRPG Live Hitpoints v2.16:\rThis extension automates changes to hitpoints based on an ability score." icon="BandageLogo" font="emotefont" />
+	<announcement text="https://github.com/bmos/FG-PFRPG-Live-Hitpoints-from-Constitution\rPFRPG Live Hitpoints v2.17:\rThis extension automates changes to hitpoints based on an ability score." icon="BandageLogo" font="emotefont" />
 
 	<base>
 		<!-- Graphics -->

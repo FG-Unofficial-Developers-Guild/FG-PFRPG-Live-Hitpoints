@@ -28,7 +28,7 @@
 		</sheetdata>
 	</windowclass>
 
-	<windowclass name="charsheet_livehp">
+	<windowclass name="charsheet_livehp" copy="charsheethelper_base">
 		<frame>charsheethelper</frame>
 		<placement>
 			<size width="225" height="353" />
@@ -39,7 +39,6 @@
 			<windowtitlebar_charsheethelper name="title">
 				<resource>char_livehp_title</resource>
 			</windowtitlebar_charsheethelper>
-			<anchor_title_charsheethelper name="contentanchor" />
 
 			<frame_char name="livehpframe">
 				<anchored to="contentanchor" height="296">
@@ -113,9 +112,6 @@
 				<tooltip textres="char_tooltip_livehp_misc" />
 				<script file="campaign/scripts/pc_recalculate.lua" />
 			</basicnumber>
-
-			<close_charsheethelper />
-			<resize_charsheethelper />
 		</sheetdata>
 	</windowclass>
 </root>

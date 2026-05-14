@@ -4,6 +4,8 @@
 -- luacheck: ignore
 -- bmos' list of changes to simplify maintenance:
 -- Changed EffectManager35E.getEffectsBonus to EffectManager35EDS.getEffectsBonus
+-- dllewell's list of changes
+-- Changed EffectManager35E.hasEffectCondition to EffectManager.hasCondition
 
 -- stylua: ignore
 function getAbilityEffectsBonus(rActor, sAbility)
@@ -19,20 +21,20 @@ function getAbilityEffectsBonus(rActor, sAbility)
 	local nEffectMod, nAbilityEffects = EffectManager35EDS.getEffectsBonus(rActor, sAbilityEffect, true);
 
 	if sAbility == "dexterity" then
-		if EffectManager35E.hasEffectCondition(rActor, "Entangled") then
+		if EffectManager.hasCondition(rActor, "Entangled") then
 			nEffectMod = nEffectMod - 4;
 			nAbilityEffects = nAbilityEffects + 1;
 		end
-		if DataCommon.isPFRPG() and EffectManager35E.hasEffectCondition(rActor, "Grappled") then
+		if DataCommon.isPFRPG() and EffectManager.hasCondition(rActor, "Grappled") then
 			nEffectMod = nEffectMod - 4;
 			nAbilityEffects = nAbilityEffects + 1;
 		end
 	end
 	if sAbility == "dexterity" or sAbility == "strength" then
-		if EffectManager35E.hasEffectCondition(rActor, "Exhausted") then
+		if EffectManager.hasCondition(rActor, "Exhausted") then
 			nEffectMod = nEffectMod - 6;
 			nAbilityEffects = nAbilityEffects + 1;
-		elseif EffectManager35E.hasEffectCondition(rActor, "Fatigued") then
+		elseif EffectManager.hasCondition(rActor, "Fatigued") then
 			nEffectMod = nEffectMod - 2;
 			nAbilityEffects = nAbilityEffects + 1;
 		end

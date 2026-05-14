@@ -56,7 +56,7 @@
 		</sheetdata>
 	</windowclass>
 
-	<windowclass name="npc_livehp">
+	<windowclass name="npc_livehp" copy="charsheethelper_base">
 		<frame>charsheethelper</frame>
 		<placement>
 			<size width="225" height="305" />
@@ -67,7 +67,6 @@
 			<windowtitlebar name="title">
 				<resource>char_livehp_title</resource>
 			</windowtitlebar>
-			<anchor_title_charsheethelper name="contentanchor" />
 
 			<frame_char name="livehpframe">
 				<anchored to="contentanchor" height="248">
@@ -132,9 +131,6 @@
 				<tooltip textres="char_tooltip_livehp_misc" />
 				<script file="campaign/scripts/npc_recalculate.lua" />
 			</basicnumber>
-
-			<close_charsheethelper />
-			<resize_charsheethelper />
 		</sheetdata>
 	</windowclass>
 </root>

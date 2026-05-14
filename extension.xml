@@ -6,9 +6,7 @@
 		<name>Feature: Live Hitpoints</name>
 		<version>2.18</version>
 		<author>bmos (Ramona T); Updated by dllewell</author>
-		<description>
-		    This extension automates changes to hitpoints based on an ability score.
-		</description>
+		<description>Change hitpoints based on an ability score.</description>
 		<ruleset>
 			<name>3.5E</name>
 		</ruleset>

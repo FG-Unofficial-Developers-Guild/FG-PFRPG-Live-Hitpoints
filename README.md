@@ -1,10 +1,11 @@
-[![Build FG-Usable File](https://github.com/bmos/FG-PFRPG-Live-Hitpoints/actions/workflows/release.yml/badge.svg)](https://github.com/bmos/FG-PFRPG-Live-Hitpoints/actions/workflows/release.yml) [![Run Luacheck on Latest Release](https://github.com/bmos/FG-PFRPG-Live-Hitpoints/actions/workflows/luacheck.yml/badge.svg)](https://github.com/bmos/FG-PFRPG-Live-Hitpoints/actions/workflows/luacheck.yml)
+[![Build FG-Usable File](https://github.com/FG-Unofficial-Developers-Guild/FG-PFRPG-Live-Hitpoints/actions/workflows/release.yml/badge.svg)](https://github.com/FG-Unofficial-Developers-Guild/FG-PFRPG-Live-Hitpoints/actions/workflows/release.yml)
+[![Run Luacheck on Latest Release](https://github.com/FG-Unofficial-Developers-Guild/FG-PFRPG-Live-Hitpoints/actions/workflows/luacheck.yml/badge.svg)](https://github.com/FG-Unofficial-Developers-Guild/FG-PFRPG-Live-Hitpoints/actions/workflows/luacheck.yml)
 
 # Live Hitpoints
 This extension automates changes to hitpoints based on an ability score.
 
 # Compatibility and Instructions
-This extension has been tested with [FantasyGrounds Unity](https://www.fantasygrounds.com/home/FantasyGroundsUnity.php) v4.5.0 (2024-02-21).
+This extension has been tested with [FantasyGrounds Unity](https://www.fantasygrounds.com/home/FantasyGroundsUnity.php) v5.1.9 (2026-05-07).
 
 It is designed and written for use with the Pathfinder 1st edition ruleset (PFRPG).
 

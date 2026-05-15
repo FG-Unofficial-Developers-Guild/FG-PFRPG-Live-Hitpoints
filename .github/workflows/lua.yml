@@ -34,23 +34,12 @@ jobs:
     steps:
       - uses: actions/checkout@0c366fd6a839edf440554fa01a7085ccba70ac98
 
-      - id: name
-        uses: mavrosxristoforos/get-xml-info@cc0a00b30a53c3adf0ea2cbfd8314cea394fbbad
-        with:
-          xml-file: 'extension.xml'
-          xpath: |
-            root/properties/name
-
-      - id: author
-        uses: mavrosxristoforos/get-xml-info@cc0a00b30a53c3adf0ea2cbfd8314cea394fbbad
-        with:
-          xml-file: 'extension.xml'
-          xpath: |
-            root/properties/author
-
       - id: format
         run: |
-          # Clean function: strip prefix, remove punctuation/spaces, lowercase
+          RAW_NAME=$(yq -p=xml '.root.properties.name' extension.xml)
+          RAW_AUTHOR=$(yq -p=xml '.root.properties.author' extension.xml)
+
+          # strip prefix, remove punctuation/spaces, lowercase
           clean_string() {
             echo "$1" | sed -e 's/^[A-Za-z]\+: *//' \
                             -e 's/([^)]*)//g' \
@@ -59,8 +48,8 @@ jobs:
                             | tr '[:upper:]' '[:lower:]'
           }
 
-          echo "name=$(clean_string "${{ steps.name.outputs.info }}")" >> $GITHUB_OUTPUT
-          echo "author=$(clean_string "${{ steps.author.outputs.info }}")" >> $GITHUB_OUTPUT
+          echo "name=$(clean_string "$RAW_NAME")" >> $GITHUB_OUTPUT
+          echo "author=$(clean_string "$RAW_AUTHOR")" >> $GITHUB_OUTPUT
 
       - uses: leafo/gh-actions-lua@8c9e175e7a3d77e21f809eefbee34a19b858641b
         with:

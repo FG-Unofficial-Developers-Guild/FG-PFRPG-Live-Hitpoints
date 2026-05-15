@@ -1,5 +1,5 @@
 [![Build FG-Usable File](https://github.com/FG-Unofficial-Developers-Guild/FG-PFRPG-Live-Hitpoints/actions/workflows/release.yml/badge.svg)](https://github.com/FG-Unofficial-Developers-Guild/FG-PFRPG-Live-Hitpoints/actions/workflows/release.yml)
-[![Run Luacheck on Latest Release](https://github.com/FG-Unofficial-Developers-Guild/FG-PFRPG-Live-Hitpoints/actions/workflows/luacheck.yml/badge.svg)](https://github.com/FG-Unofficial-Developers-Guild/FG-PFRPG-Live-Hitpoints/actions/workflows/luacheck.yml)
+[![Run Luacheck on Latest Release](https://github.com/FG-Unofficial-Developers-Guild/FG-PFRPG-Live-Hitpoints/actions/workflows/lua.yml/badge.svg)](https://github.com/FG-Unofficial-Developers-Guild/FG-PFRPG-Live-Hitpoints/actions/workflows/lua.yml)
 
 # Live Hitpoints
 This extension automates changes to hitpoints based on an ability score.
